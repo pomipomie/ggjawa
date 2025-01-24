@@ -1,20 +1,20 @@
 [gd_scene load_steps=6 format=3 uid="uid://bmun3epjdb0rb"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_vhw2i"]
-[ext_resource type="Texture2D" uid="uid://b68hqjyc5hnyk" path="res://assets/player1_right.png" id="2_5vj0m"]
-[ext_resource type="Texture2D" uid="uid://c5a4k4qqu7rus" path="res://assets/player2_left.png" id="3_o1j5k"]
+[ext_resource type="Texture2D" uid="uid://bkcgu1aurtb7w" path="res://assets/michi_1.png" id="2_f3wg3"]
+[ext_resource type="Texture2D" uid="uid://dwjc743vgkd4u" path="res://assets/michi_2.png" id="3_4ojfg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kf12m"]
-size = Vector2(65.5, 88.5)
+size = Vector2(74.75, 66)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_s83y3"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_5vj0m")
+"texture": ExtResource("2_f3wg3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_o1j5k")
+"texture": ExtResource("3_4ojfg")
 }],
 "loop": true,
 "name": &"default",
@@ -26,7 +26,7 @@ position = Vector2(91, 102)
 script = ExtResource("1_vhw2i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-3, -2)
+position = Vector2(1.625, -6)
 shape = SubResource("RectangleShape2D_kf12m")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -34,5 +34,4 @@ z_index = 1
 position = Vector2(0, -5)
 sprite_frames = SubResource("SpriteFrames_s83y3")
 autoplay = "default"
-frame = 1
-frame_progress = 0.232009
+frame_progress = 0.00527182
