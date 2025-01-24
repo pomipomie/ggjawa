@@ -1,0 +1,5 @@
+res://main.tscn
+res://camera_2d.gd
+res://player.tscn
+res://player.gd
+res://platform.tscn
