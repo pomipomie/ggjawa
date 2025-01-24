@@ -6,9 +6,11 @@ const JUMP_VELOCITY: float = -400.0
 const MAX_JUMPS: int = 1
 
 var jumps_remaining: int = 0
+var screen_size: Vector2
 
 func _ready() -> void:
 	jumps_remaining = MAX_JUMPS
+	screen_size = get_viewport_rect().size
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -29,6 +31,7 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * SPEED
+		$AnimatedSprite2D.flip_h = direction < 0  # Flip sprite when moving left
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
