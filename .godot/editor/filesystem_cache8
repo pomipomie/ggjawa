@@ -1,13 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737816442
-camera_2d.gd::GDScript::-1::1737722160::0::1::::<>Camera2D<>::
-floor.tscn::PackedScene::200394366864956679::1737753629::0::1::::<><>::
+::res://::1737819956
+camera_2d.gd::GDScript::-1::1737817253::0::1::::<>Camera2D<>::
+floor.tscn::PackedScene::200394366864956679::1737819956::0::1::::<><>::
 icon.svg::CompressedTexture2D::7930740081821205267::1737721687::1737721701::1::::<><>::
-main.tscn::PackedScene::5185137958003250136::1737753628::0::1::::<><>::res://camera_2d.gd<>uid://clqg43lx5ohco::::res://platform.tscn<>uid://bmun3epjdb0rb::::res://player.tscn<>uid://c4cp3vqebdk6::::res://floor.tscn
-platform.tscn::PackedScene::5578366270181671390::1737753629::0::1::::<><>::uid://can3qrsnrywc1::::res://assets/plat1.png
-player.gd::GDScript::-1::1737752683::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::3270813919244449727::1737753629::0::1::::<><>::res://player.gd<>uid://cuch7usr8fxfd::::res://assets/GatoCorriendoD1.png<>uid://c28njdutw51cp::::res://assets/GatoCorriendoD2.png<>uid://cuopvef5jga11::::res://assets/GatoCorriendoI1.png<>uid://bbwo4yi710wcb::::res://assets/GatoCorriendoI2.png
-::res://assets/::1737753236
+main.tscn::PackedScene::5185137958003250136::1737819956::0::1::::<><>::uid://clqg43lx5ohco::::res://platform.tscn<>uid://bmun3epjdb0rb::::res://player.tscn<>uid://c4cp3vqebdk6::::res://floor.tscn<>uid://b8yqo4tg61mq::::res://assets/bg.png
+platform.tscn::PackedScene::5578366270181671390::1737819956::0::1::::<><>::uid://can3qrsnrywc1::::res://assets/plat1.png
+player.gd::GDScript::-1::1737818955::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::3270813919244449727::1737819956::0::1::::<><>::res://player.gd<>uid://cuch7usr8fxfd::::res://assets/GatoCorriendoD1.png<>uid://c28njdutw51cp::::res://assets/GatoCorriendoD2.png<>uid://cuopvef5jga11::::res://assets/GatoCorriendoI1.png<>uid://bbwo4yi710wcb::::res://assets/GatoCorriendoI2.png
+::res://assets/::1737820536
+bg.png::CompressedTexture2D::139799871049648520::1737819934::1737819938::1::::<><>::
+bgcol.png::CompressedTexture2D::9049035590576258727::1737820536::1737820542::1::::<><>::
+bgtiles.png::CompressedTexture2D::6404335865834748144::1737820423::1737820426::1::::<><>::
 BurbujaAzul.png::CompressedTexture2D::363503890669699933::1737751343::1737751398::1::::<><>::
 BurbujaRoja.png::CompressedTexture2D::1357994954597406357::1737751339::1737751398::1::::<><>::
 GatoBuffD1.png::CompressedTexture2D::6294360497318056207::1737751251::1737751398::1::::<><>::
@@ -18,7 +21,8 @@ GatoCorriendoD1.png::CompressedTexture2D::6181230239099498209::1737752128::17377
 GatoCorriendoD2.png::CompressedTexture2D::6736870193908177643::1737751735::1737751745::1::::<><>::
 GatoCorriendoI1.png::CompressedTexture2D::6206468004459935566::1737751937::1737751968::1::::<><>::
 GatoCorriendoI2.png::CompressedTexture2D::2502928938250946181::1737751963::1737751968::1::::<><>::
-image.png::CompressedTexture2D::5239650050885145998::1737753231::1737753236::1::::<><>::
+image (1).webp::CompressedTexture2D::9121769631544894278::1737819543::1737819560::1::::<><>::
+image.png::CompressedTexture2D::5239650050885145998::1737819658::1737819663::1::::<><>::
 image.webp::CompressedTexture2D::7244321315790319412::1737739873::1737743441::1::::<><>::
 michi_1.png::CompressedTexture2D::3092839259955520130::1737743765::1737743772::1::::<><>::
 michi_2.png::CompressedTexture2D::8722176157687280458::1737743714::1737743772::1::::<><>::

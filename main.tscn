@@ -1,10 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://cf4yp2dbknggm"]
+[gd_scene load_steps=5 format=3 uid="uid://cf4yp2dbknggm"]
 
 [ext_resource type="PackedScene" uid="uid://clqg43lx5ohco" path="res://platform.tscn" id="2_vcvfh"]
 [ext_resource type="PackedScene" uid="uid://bmun3epjdb0rb" path="res://player.tscn" id="3_xe6mi"]
 [ext_resource type="PackedScene" uid="uid://c4cp3vqebdk6" path="res://floor.tscn" id="4_7gret"]
+[ext_resource type="Texture2D" uid="uid://b8yqo4tg61mq" path="res://assets/bg.png" id="4_bxpfe"]
 
 [node name="Main" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 0
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="CanvasLayer"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+position = Vector2(680, 350)
+motion_scale = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
+position = Vector2(-42, -16)
+texture = ExtResource("4_bxpfe")
+region_rect = Rect2(80, 0, 1280, 720)
 
 [node name="Platform" parent="." instance=ExtResource("2_vcvfh")]
 position = Vector2(-327, 164)
