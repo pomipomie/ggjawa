@@ -51,3 +51,10 @@ animation = &"left"
 autoplay = "default"
 frame = 1
 frame_progress = 0.350642
+
+[node name="Camera2D" type="Camera2D" parent="."]
+process_priority = 2
+offset = Vector2(0, -380)
+limit_left = -680
+limit_top = 0
+limit_bottom = 720

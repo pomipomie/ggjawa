@@ -7,8 +7,10 @@ const MAX_JUMPS: int = 1
 
 var jumps_remaining: int = 0
 var screen_size: Vector2
+@onready var camera: Camera2D = $Camera2D
 
 func _ready() -> void:
+	camera.make_current()
 	jumps_remaining = MAX_JUMPS
 	screen_size = get_viewport_rect().size
 
@@ -36,3 +38,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+	# Prevent the player from moving left beyond the starting point
+	if position.x < -640:
+		position.x = -640
