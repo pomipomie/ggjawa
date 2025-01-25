@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cf4yp2dbknggm"]
+[gd_scene load_steps=6 format=3 uid="uid://cf4yp2dbknggm"]
 
+[ext_resource type="Texture2D" uid="uid://d0l5okjuap3s2" path="res://assets/image (2).png" id="1_v1wmr"]
 [ext_resource type="PackedScene" uid="uid://clqg43lx5ohco" path="res://platform.tscn" id="2_vcvfh"]
 [ext_resource type="PackedScene" uid="uid://bmun3epjdb0rb" path="res://player.tscn" id="3_xe6mi"]
 [ext_resource type="PackedScene" uid="uid://c4cp3vqebdk6" path="res://floor.tscn" id="4_7gret"]
-[ext_resource type="Texture2D" uid="uid://b8yqo4tg61mq" path="res://assets/bg.png" id="4_bxpfe"]
+[ext_resource type="Script" path="res://platform_spawner.gd" id="5_1sxed"]
 
 [node name="Main" type="Node2D"]
 
@@ -17,21 +18,23 @@ position = Vector2(680, 350)
 motion_scale = Vector2(0, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
-position = Vector2(-42, -16)
-texture = ExtResource("4_bxpfe")
-region_rect = Rect2(80, 0, 1280, 720)
-
-[node name="Platform" parent="." instance=ExtResource("2_vcvfh")]
-position = Vector2(-327, 164)
-
-[node name="Platform2" parent="." instance=ExtResource("2_vcvfh")]
-position = Vector2(17, 91)
-
-[node name="Platform3" parent="." instance=ExtResource("2_vcvfh")]
-position = Vector2(319, 204)
+texture_repeat = 3
+position = Vector2(-34, 36)
+scale = Vector2(2.38123, 2.25903)
+texture = ExtResource("1_v1wmr")
+region_rect = Rect2(4.06085, 0.436676, 726.248, 363.124)
 
 [node name="Player" parent="." instance=ExtResource("3_xe6mi")]
 position = Vector2(-624, 265)
 
 [node name="Floor" parent="." instance=ExtResource("4_7gret")]
 position = Vector2(5, 327)
+
+[node name="PlatformSpawner" type="Node2D" parent="."]
+position = Vector2(-515, -250)
+scale = Vector2(1.5, 1.5)
+script = ExtResource("5_1sxed")
+platform_scene = ExtResource("2_vcvfh")
+spawn_area = Rect2(-540, 700, 5000, 20)
+level_height = 640
+platform_count = 100

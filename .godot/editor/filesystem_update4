@@ -4,3 +4,4 @@ res://platform.tscn
 res://floor.tscn
 res://player.gd
 res://camera_2d.gd
+res://platform_spawner.gd
