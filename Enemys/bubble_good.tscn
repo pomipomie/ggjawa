@@ -18,14 +18,17 @@ animations = [{
 radius = 45.0111
 
 [node name="Bubble_Good" type="CharacterBody2D"]
+z_index = 2
 position = Vector2(680, 304)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_8u4if")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 2
 scale = Vector2(0.05, 0.05)
 sprite_frames = SubResource("SpriteFrames_oe3to")
+frame_progress = 0.519527
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_2si0x")
