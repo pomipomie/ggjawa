@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b64skp6hp6ivq"
+path="res://.godot/imported/Cat Hurt.ogg-24e5e6cb0447888130e7541bb8ac49d9.oggvorbisstr"
+
+[deps]
+
+source_file="res://sound/Cat Hurt.ogg"
+dest_files=["res://.godot/imported/Cat Hurt.ogg-24e5e6cb0447888130e7541bb8ac49d9.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

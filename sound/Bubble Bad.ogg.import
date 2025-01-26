@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ciall34te6h0k"
+path="res://.godot/imported/Bubble Bad.ogg-795e2419d1c43ccd153cf50548ab24b2.oggvorbisstr"
+
+[deps]
+
+source_file="res://sound/Bubble Bad.ogg"
+dest_files=["res://.godot/imported/Bubble Bad.ogg-795e2419d1c43ccd153cf50548ab24b2.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

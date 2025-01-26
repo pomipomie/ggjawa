@@ -11,21 +11,7 @@ var spawn_bubble_good_instance: Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	if spawn_bubble_bad_scene:
-		spawn_bubble_bad_instance = spawn_bubble_bad_scene.instantiate()
-		add_child(spawn_bubble_bad_instance)
-		spawn_bubble_bad_instance.start_spawning()  # Call the start function to initialize spawning
-	else:
-		print("Error: spawn_bubble_bad_scene not assigned!")
-	
-	if spawn_bubble_good_scene:
-		spawn_bubble_good_instance = spawn_bubble_good_scene.instantiate()
-		get_parent().add_child(spawn_bubble_good_instance)
-		spawn_bubble_good_instance.start_spawning()  # Call the start function to initialize spawning
-	else:
-		print("Error: spawn_bubble_bad_scene not assigned!")
-		
-		
+	$MusicMenu.play()
 	# Spawn the end marker at the end of the level
 	spawn_end_marker()
 
@@ -46,7 +32,7 @@ func spawn_end_marker():
 	print("End marker parent: ", end_marker.get_parent())
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 	
 func _on_level_completed():
