@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfbc7gdb2shyx"]
+
+[ext_resource type="Script" path="res://goal.gd" id="1_wm84o"]
+[ext_resource type="Texture2D" uid="uid://cxikqgjxrcyro" path="res://assets/bgtiles.png" id="2_apamq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_26dvx"]
+size = Vector2(30, 31)
+
+[node name="Goal" type="StaticBody2D"]
+top_level = true
+z_index = 2
+script = ExtResource("1_wm84o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 1
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_apamq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_26dvx")
+debug_color = Color(0.685945, 0.496017, 0.185256, 0.42)

@@ -4,9 +4,10 @@ extends CharacterBody2D
 const SPEED: float = 300.0
 const JUMP_VELOCITY: float = -400.0
 const MAX_JUMPS: int = 1
+@export var level_length: float = 5640  # Match the level's length
 
-var jumps_remaining: int = 0
-var screen_size: Vector2
+@export var jumps_remaining: int = 0
+@export var screen_size: Vector2
 @onready var camera: Camera2D = $Camera2D
 
 func _ready() -> void:
@@ -42,3 +43,5 @@ func _physics_process(delta: float) -> void:
 	# Prevent the player from moving left beyond the starting point
 	if position.x < -640:
 		position.x = -640
+	elif position.x > level_length+640:
+		position.x = level_length+640

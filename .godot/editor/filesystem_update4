@@ -1,8 +1,9 @@
-res://player.tscn
 res://main.tscn
+res://player.tscn
 res://platform.tscn
 res://floor.tscn
+res://main.gd
+res://floor.gd
 res://player.gd
-res://camera_2d.gd
-res://platform_spawner.gd
-res://platform_sprite_2d.gd
+res://goal.tscn
+res://goal.gd
