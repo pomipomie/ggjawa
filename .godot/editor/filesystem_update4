@@ -1,6 +1,12 @@
-res://player.tscn
+res://Enemys/Bubble_Bad.tscn
 res://main.tscn
+res://Enemys/spawn_bubble_bad.tscn
+res://spawn_bubble_good.gd
+res://Enemys/spawn_bubble_good.tscn
+res://node_2d.tscn
+res://Enemys/bubble_good.tscn
+res://Global/global.tscn
+res://player.tscn
 res://platform.tscn
 res://floor.tscn
-res://player.gd
-res://camera_2d.gd
+res://Enemys/bubble_good.gd

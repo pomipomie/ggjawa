@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://v76lgx2adpdn"]
+
+[ext_resource type="Script" path="res://Enemys/bubble_good.gd" id="1_8u4if"]
+[ext_resource type="Texture2D" uid="uid://fgc4drcr20ib" path="res://assets/BurbujaAzul.png" id="2_a6piq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oe3to"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a6piq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2si0x"]
+radius = 45.0111
+
+[node name="Bubble_Good" type="CharacterBody2D"]
+position = Vector2(680, 304)
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_8u4if")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
+sprite_frames = SubResource("SpriteFrames_oe3to")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_2si0x")
+
+[node name="Area2D" type="Area2D" parent="." groups=["bubble_good"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_2si0x")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
