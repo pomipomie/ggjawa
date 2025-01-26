@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://cf4yp2dbknggm"]
 
-[ext_resource type="Texture2D" uid="uid://d0l5okjuap3s2" path="res://assets/image (2).png" id="1_v1wmr"]
+[ext_resource type="Texture2D" uid="uid://ch16y2ft4nin5" path="res://assets/background.png" id="1_wy6vn"]
 [ext_resource type="PackedScene" uid="uid://clqg43lx5ohco" path="res://platform.tscn" id="2_vcvfh"]
 [ext_resource type="PackedScene" uid="uid://bmun3epjdb0rb" path="res://player.tscn" id="3_xe6mi"]
 [ext_resource type="PackedScene" uid="uid://c4cp3vqebdk6" path="res://floor.tscn" id="4_7gret"]
@@ -19,9 +19,8 @@ motion_scale = Vector2(0, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/ParallaxLayer"]
 texture_repeat = 3
-position = Vector2(-34, 36)
-scale = Vector2(2.38123, 2.25903)
-texture = ExtResource("1_v1wmr")
+position = Vector2(-38, 10)
+texture = ExtResource("1_wy6vn")
 region_rect = Rect2(4.06085, 0.436676, 726.248, 363.124)
 
 [node name="Player" parent="." instance=ExtResource("3_xe6mi")]
