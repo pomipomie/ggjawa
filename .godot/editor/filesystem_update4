@@ -8,3 +8,5 @@ res://Enemys/bubble_good.tscn
 res://Enemys/spawn_bubble_bad.tscn
 res://main.gd
 res://Enemys/spawn_bubble_bad.gd
+res://Enemys/spawn_bubble_good.tscn
+res://Enemys/spawn_bubble_good.gd
