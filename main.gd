@@ -6,6 +6,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$MusicMenu.play()
 	# Spawn the end marker at the end of the level
 	spawn_end_marker()
 
@@ -27,7 +28,7 @@ func spawn_end_marker():
 	print("End marker parent: ", end_marker.get_parent())
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 	
 func _on_level_completed():

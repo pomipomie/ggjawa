@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://v76lgx2adpdn"]
+[gd_scene load_steps=6 format=3 uid="uid://v76lgx2adpdn"]
 
 [ext_resource type="Script" path="res://Enemys/bubble_good.gd" id="1_8u4if"]
 [ext_resource type="Texture2D" uid="uid://fgc4drcr20ib" path="res://assets/BurbujaAzul.png" id="2_a6piq"]
+[ext_resource type="AudioStream" uid="uid://bjwbgdipkdtqv" path="res://sound/Bubble Good.ogg" id="3_yetvp"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_oe3to"]
 animations = [{
@@ -35,6 +36,7 @@ shape = SubResource("CircleShape2D_2si0x")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_2si0x")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="SoundBubbleGood" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_yetvp")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

@@ -1,9 +1,11 @@
 res://main.tscn
+res://main.gd
 res://player.tscn
 res://platform.tscn
 res://floor.tscn
-res://main.gd
-res://floor.gd
-res://player.gd
-res://goal.tscn
-res://goal.gd
+res://Enemys/Bubble_Bad.tscn
+res://Enemys/spawn_bubble_bad.tscn
+res://Enemys/bubble_good.tscn
+res://Global/global.tscn
+res://Enemys/spawn_bubble_good.tscn
+res://Global/global.gd
