@@ -48,4 +48,4 @@ level_height = 640
 platform_count = 100
 
 [node name="Spawn_Bubble_Bad" parent="." instance=ExtResource("8_hg7qo")]
-position = Vector2(117, 128)
+position = Vector2(-657, -361)
