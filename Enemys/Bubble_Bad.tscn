@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0nc1s8tvvane"]
+
+[ext_resource type="Script" path="res://Enemys/Bubble_Bad.gd" id="1_mwmna"]
+[ext_resource type="Texture2D" uid="uid://tl28je3licev" path="res://assets/BurbujaRoja.png" id="2_14nbs"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wv15l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_14nbs")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_on4e3"]
+radius = 56.0
+
+[node name="Bubble_Bad" type="CharacterBody2D"]
+z_index = 2
+position = Vector2(1120, 567)
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_mwmna")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(0, 1)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("2_14nbs")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(1.00011, 1.00011)
+scale = Vector2(0.0650001, 0.0650001)
+sprite_frames = SubResource("SpriteFrames_wv15l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_on4e3")
+
+[node name="Area2D" type="Area2D" parent="." groups=["bubble_bad"]]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_on4e3")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

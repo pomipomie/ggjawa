@@ -47,10 +47,7 @@ z_index = 1
 position = Vector2(3, -10)
 scale = Vector2(0.0455, 0.0455)
 sprite_frames = SubResource("SpriteFrames_s83y3")
-animation = &"left"
 autoplay = "default"
-frame = 1
-frame_progress = 0.350642
 
 [node name="Camera2D" type="Camera2D" parent="."]
 process_priority = 2

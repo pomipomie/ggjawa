@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 const SPEED: float = 300.0
-const JUMP_VELOCITY: float = -400.0
+const JUMP_VELOCITY: float = -500.0
 const MAX_JUMPS: int = 1
 @export var level_length: float = 5640  # Match the level's length
 
