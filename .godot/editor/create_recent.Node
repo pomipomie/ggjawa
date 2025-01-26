@@ -1,13 +1,10 @@
-AnimatedSprite2D
-AudioStreamPlayer
-Timer
-Area2D
 CollisionShape2D
-Node
 Sprite2D
-CharacterBody2D
+StaticBody2D
+Node2D
 CanvasLayer
 ParallaxLayer
 ParallaxBackground
 Camera2D
-StaticBody2D
+AnimatedSprite2D
+CharacterBody2D

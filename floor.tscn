@@ -1,20 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://c4cp3vqebdk6"]
+[gd_scene load_steps=4 format=3 uid="uid://c4cp3vqebdk6"]
+
+[ext_resource type="Texture2D" uid="uid://cbkn0im8p2cjy" path="res://assets/floor.png" id="1_fowi0"]
+[ext_resource type="Script" path="res://floor.gd" id="1_pwe2d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2wr10"]
-size = Vector2(3256, 63)
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_at6h1"]
+size = Vector2(5004, 63)
 
 [node name="Floor" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(444, 688)
+script = ExtResource("1_pwe2d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-600, -687.5)
+texture_repeat = 2
+position = Vector2(-598, -687.5)
 shape = SubResource("RectangleShape2D_2wr10")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+texture_repeat = 2
 position = Vector2(-595.5, -688)
-scale = Vector2(3265, 64)
-texture = SubResource("CanvasTexture_at6h1")
+texture = ExtResource("1_fowi0")
+region_enabled = true
+region_rect = Rect2(0, 0, 5000, 73)
