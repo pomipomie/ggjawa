@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://ed2km5ksq3ma"]
+
+[ext_resource type="Script" path="res://Enemys/spawn_bubble_good.gd" id="1_0cj4y"]
+
+[node name="Spawn_Bubble_Good" type="Area2D"]
+script = ExtResource("1_0cj4y")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.863
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
