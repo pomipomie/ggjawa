@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dleuw4csnu0w5"
+path="res://.godot/imported/Cat Attack.ogg-f9bdfc676d954c2a0e30e3cca1166c1e.oggvorbisstr"
+
+[deps]
+
+source_file="res://sound/Cat Attack.ogg"
+dest_files=["res://.godot/imported/Cat Attack.ogg-f9bdfc676d954c2a0e30e3cca1166c1e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

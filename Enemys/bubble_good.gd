@@ -1,5 +1,8 @@
 extends CharacterBody2D
 
+@onready var explotion_sound = $SoundBubbleGood
+@onready var animated_sprite = $AnimatedSprite2D
+
 var move_speed = 200
 var zigzag_offset = 100
 var zigzag_timer = 5
@@ -13,6 +16,10 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _on_area_2d_area_entered(area):
-	if area.is_in_group("player") or area.is_in_group("floor"):
+	if area.is_in_group("player") or area.is_in_group("floor") or area.is_in_group("platform"):
 		queue_free()
 		pass
+
+func explotion():
+	explotion_sound.play()
+	animated_sprite.play("explotion")

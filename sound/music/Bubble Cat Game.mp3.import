@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://6fimjsyh8l6"
+path="res://.godot/imported/Bubble Cat Game.mp3-50bb5df71be8dbb3ce577be746d504be.mp3str"
+
+[deps]
+
+source_file="res://sound/music/Bubble Cat Game.mp3"
+dest_files=["res://.godot/imported/Bubble Cat Game.mp3-50bb5df71be8dbb3ce577be746d504be.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
