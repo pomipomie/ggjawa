@@ -42,6 +42,3 @@ platform_scene = ExtResource("2_vcvfh")
 spawn_area = Rect2(-540, 700, 5000, 20)
 level_height = 640
 platform_count = 100
-
-[node name="Goal" parent="." instance=ExtResource("2_2t3rt")]
-position = Vector2(1207, 278)
