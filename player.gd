@@ -9,6 +9,7 @@ const MAX_JUMPS: int = 1
 @export var jumps_remaining: int = 0
 @export var screen_size: Vector2
 @onready var camera: Camera2D = $Camera2D
+@onready var jump_sound: AudioStreamPlayer2D = $AudioStreamPlayer2D
 
 func _ready() -> void:
 	camera.make_current()
@@ -24,10 +25,13 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept") and jumps_remaining > 0:
 		velocity.y = JUMP_VELOCITY
 		jumps_remaining -= 1  # Use up one jump
+		$AnimatedSprite2D.animation = 'jump'
+		jump_sound.play()
 	
 	# Reset jumps when on the floor
 	if is_on_floor():
 		jumps_remaining = MAX_JUMPS
+		$AnimatedSprite2D.animation = 'default'
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.

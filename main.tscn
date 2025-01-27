@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cf4yp2dbknggm"]
+[gd_scene load_steps=11 format=3 uid="uid://cf4yp2dbknggm"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_y0ptk"]
 [ext_resource type="Texture2D" uid="uid://bp4l5kvrggq0s" path="res://assets/background1.png" id="1_ywi5x"]
@@ -8,9 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://c4cp3vqebdk6" path="res://floor.tscn" id="4_7gret"]
 [ext_resource type="PackedScene" uid="uid://ed2km5ksq3ma" path="res://Enemys/spawn_bubble_good.tscn" id="4_ath30"]
 [ext_resource type="Script" path="res://platform_spawner.gd" id="5_1sxed"]
-[ext_resource type="PackedScene" uid="uid://v76lgx2adpdn" path="res://Enemys/bubble_good.tscn" id="8_2ggyc"]
-[ext_resource type="AudioStream" uid="uid://o3i24y80hukb" path="res://sound/music/Escape the Bubble bath.mp3" id="9_yuqm3"]
 [ext_resource type="PackedScene" uid="uid://c765nrlh11aso" path="res://Enemys/spawn_bubble_bad.tscn" id="8_hg7qo"]
+[ext_resource type="AudioStream" uid="uid://o3i24y80hukb" path="res://sound/music/Escape the Bubble bath.mp3" id="9_yuqm3"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_y0ptk")
@@ -48,15 +47,11 @@ platform_scene = ExtResource("2_vcvfh")
 spawn_area = Rect2(-540, 700, 5000, 20)
 level_height = 640
 platform_count = 100
-<<<<<<< HEAD
-=======
-
-[node name="Spawn_Bubble_Bad" parent="." instance=ExtResource("8_hg7qo")]
-position = Vector2(-657, -361)
->>>>>>> e3ee0ab217c45532deac722eb20b646f3c77388d
-
-[node name="Bubble_Good" parent="." instance=ExtResource("8_2ggyc")]
-position = Vector2(-340, 91)
 
 [node name="MusicMenu" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("9_yuqm3")
+
+[node name="Spawn_Bubble_Bad" parent="." instance=ExtResource("8_hg7qo")]
+
+[node name="Spawn_Bubble_Good" parent="." instance=ExtResource("4_ath30")]
+position = Vector2(4, -352)

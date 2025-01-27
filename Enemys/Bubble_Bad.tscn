@@ -1,6 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://d0nc1s8tvvane"]
 
 [ext_resource type="Script" path="res://Enemys/Bubble_Bad.gd" id="1_mwmna"]
+[ext_resource type="Texture2D" uid="uid://tl28je3licev" path="res://assets/BurbujaRoja.png" id="2_14nbs"]
 [ext_resource type="AudioStream" uid="uid://ciall34te6h0k" path="res://sound/Bubble Bad.ogg" id="3_gmfxy"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wv15l"]
